@@ -1,0 +1,214 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #fff;
+    color: #000;
+}
+
+.tasks td button:last-child,
+.tasks td button:first-child,
+.add-task button,
+.User button,
+#saveTaskBtn {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tasks td button:last-child:hover,
+.tasks td button:first-child:hover,
+.add-task button:hover,
+.User button:hover,
+#saveTaskBtn:hover {
+    transform: scale(1.10);
+}
+
+.tasks td button:last-child,
+.add-task button,
+.User button,
+#saveTaskBtn {
+    color: #fff;
+}
+
+.tasks td button:first-child,
+#saveTaskBtn {
+    background-color: #4ab14d;
+}
+
+.tasks td button:last-child,
+.add-task button,
+.User button {
+    background-color: #d71313;
+}
+
+.tasks td button:hover {
+    background-color: #0b5310;
+}
+
+.add-task button:hover,
+.User button:hover,
+#saveTaskBtn:hover {
+    transform: scale(1.15);
+}
+
+.add-task button:hover,
+.User button:hover {
+    background-color: #591b0c;
+}
+
+#saveTaskBtn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#saveTaskBtn:hover {
+    background-color: #45a049;
+}
+
+.filter-buttons button {
+    margin-right: 5px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-buttons .selected-filter {
+    background-color: #4caf50;
+    color: white;
+}
+
+.tasks table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tasks th,
+.tasks td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tasks th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.tasks td {
+    border: 3px solid #ddd;
+    border-style: dotted;
+}
+
+.tasks {
+    border: 2px solid #ddd;
+    border-style: solid;
+}
+
+.add-task input,
+.add-task button {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.success-message {
+    color: #4caf50;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal button:hover {
+    background-color: #45a049;
+}
+
+.User {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.User button {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .task-manager {
+        margin: 5px;
+    }
+
+    .filter-buttons button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .tasks th,
+    .tasks td {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .add-task input,
+    .add-task button {
+        padding: 8px;
+        margin-right: 5px;
+    }
+
+    .success-message {
+        font-size: 12px;
+    }
+
+    .modal-content {
+        padding: 10px;
+    }
+
+    .User button {
+        padding: 8px;
+        margin-left: 5px;
+    }
+}
+
+.tasks td button:first-child {
+    color: #fff;
+}
